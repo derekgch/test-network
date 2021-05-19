@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import {callAxios, callHTTPS} from './regular.js'
 function App() {
   return (
     <div className="App">
@@ -9,6 +9,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <button onClick={callAxios}>callAxios</button>
+        <button onClick={callHTTPS}>callHTTPS</button>
+
         <a
           className="App-link"
           href="https://reactjs.org"
